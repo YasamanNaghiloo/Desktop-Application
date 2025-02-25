@@ -1,0 +1,69 @@
+/* Style the text inside the Spinner */
+.spinner .text-field, .combo-box .text-field, .text-field{
+    -fx-text-fill: #000000; /* Set text color */
+    -fx-opacity: 1;
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+/* Define styles for the ComboBox arrow button */
+.combo-box .arrow-button {
+
+    /* Set arrow button opacity */
+    -fx-opacity: 1; /* Default opacity */
+}
+
+/* Define styles for the ComboBox arrow button when ComboBox is disabled */
+.combo-box:disabled .arrow-button {
+    /* Set arrow button opacity to 0 when ComboBox is disabled */
+    -fx-opacity: 0;
+}
+/* Define styles for the ComboBox */
+.combo-box {
+
+    -fx-border-width: 1;
+    -fx-border-color:lightgray;
+}
+
+/* Define styles for the ComboBox when disabled */
+.combo-box:disabled {
+    /* Set background color to transparent when ComboBox is disabled */
+    -fx-background-color: transparent;
+    -fx-border-width: 1;
+    -fx-border-color: lightgray;
+}
+
+.spinner {
+    /* Remove border */
+    -fx-border-width: 1;
+    -fx-border-color: lightgray;
+    -fx-background-color: transparent;
+}
+
+.spinner:disabled {
+    /* Remove border */
+    -fx-border-width: 1;
+    -fx-border-color: lightgray;
+    -fx-background-color: transparent;
+}
+
+.text-field {
+    /* Remove border */
+    -fx-border-width: 1;
+    -fx-border-color: lightgray;
+}
+
+/* Define styles for the Spinner arrows */
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+
+    /* Set arrow button opacity */
+    -fx-opacity: 1; /* Default opacity */
+}
+
+/* Define styles for the Spinner arrows when Spinner is disabled */
+.spinner:disabled .increment-arrow-button,
+.spinner:disabled .decrement-arrow-button {
+    /* Set arrow button opacity to 0 when Spinner is disabled */
+    -fx-opacity: 0;
+}

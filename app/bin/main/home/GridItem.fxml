@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- Home Screen -->
+<!-- End Home Screen -->
+
+<VBox stylesheets="@Home.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.controllers.GridItemController">
+  <VBox onMouseClicked="#btOnClick" prefWidth="200" styleClass="grid-item">
+    <ImageView fx:id="img" fitHeight="115.0" fitWidth="200.0" preserveRatio="false">
+      <image>
+        <Image url="@../Welcome.jpg" />
+      </image>
+    </ImageView>
+    <HBox alignment="CENTER" styleClass="bg-primary">
+      <padding>
+        <Insets bottom="4.0" left="10.0" right="10.0" top="4.0" />
+      </padding>
+      <Label fx:id="nameLabel" onMouseEntered="#mouseHover" prefWidth="200" text="" textAlignment="CENTER" textFill="WHITE">
+        <font>
+          <Font name="Lucida Bright" size="25.0" />
+        </font>
+        <tooltip>
+          <Tooltip fx:id="hoverText" style="-fx-background-color: #969696;" text="Empty Tooltip">
+            <font>
+              <Font name="Lucida Bright" size="14.0" />
+            </font>
+          </Tooltip>
+        </tooltip>
+        <contextMenu>
+          <ContextMenu>
+            <items>
+              <MenuItem fx:id="weeklyDinner" mnemonicParsing="false" onAction="#handleAddToWeeklyDinnerList" text="Add to weakly dinner list" />
+            </items>
+          </ContextMenu>
+        </contextMenu>
+      </Label>
+    </HBox>
+  </VBox>
+</VBox>
