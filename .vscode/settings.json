@@ -1,0 +1,16 @@
+{
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.configuration.updateBuildConfiguration": "automatic",
+<<<<<<< HEAD
+  "java.checkstyle.configuration": "/google_checks.xml"
+=======
+  "java.checkstyle.version": "9.3",
+  "java.checkstyle.configuration": "/google_checks.xml",
+  "files.exclude": {
+    "**/*.rpyc": true,
+    "**/*.rpa": true,
+    "**/*.rpymc": true,
+    "**/cache/": true
+  }
+>>>>>>> 3b6fc39275921abbf445a5e007c736ee46ff196a
+}
