@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox prefWidth="1270.0" style="-fx-background-image: url('/back1.jpg');" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.controllers.ModifyUser">
+   <children>
+      <HBox alignment="CENTER" spacing="420.0" style="-fx-background-color: FA9D83;">
+         <children>
+            <ImageView fitHeight="59.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@12650062.png" />
+               </image>
+               <rotationAxis>
+                  <Point3D y="1.0" />
+               </rotationAxis>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="52.0" prefWidth="300.0" style="-fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 5.0, 0.0, 0.0, 5.0);" text="Modify  User" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="59.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@12650062.png" />
+               </image>
+            </ImageView>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="638.0" prefWidth="1270.0" VBox.vgrow="ALWAYS">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="659.0" prefWidth="1270.0">
+               <children>
+                  <Label layoutX="218.0" layoutY="162.0" text="User name" AnchorPane.leftAnchor="208.0" AnchorPane.rightAnchor="951.0">
+                     <font>
+                        <Font name="Lucida Bright Demibold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="208.0" layoutY="331.0" text="Display name" AnchorPane.leftAnchor="208.0" AnchorPane.rightAnchor="951.0">
+                     <font>
+                        <Font name="Lucida Bright Demibold" size="16.0" />
+                     </font>
+                  </Label>
+                  
+                  <TextField fx:id="txUsername" layoutX="356.0" layoutY="158.0" prefHeight="25.0" prefWidth="655.0" style="-fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 5.0, 0.0, 0.0, 5.0);" AnchorPane.leftAnchor="356.0" AnchorPane.rightAnchor="259.0">
+                     <font>
+                        <Font name="Lucida Bright" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txDisplayname" layoutX="356.0" layoutY="327.0" prefHeight="25.0" prefWidth="655.0" style="-fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 5.0, 0.0, 0.0, 5.0);" AnchorPane.leftAnchor="356.0" AnchorPane.rightAnchor="259.0">
+                     <font>
+                        <Font name="Lucida Bright" size="14.0" />
+                     </font>
+                  </TextField>
+                  
+                  <Button layoutX="529.0" layoutY="548.0" mnemonicParsing="false" onAction="#btModifyUser" prefHeight="36.0" prefWidth="210.0" style="-fx-background-color: FA9D83; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 5.0, 0.0, 0.0, 5.0); -fx-background-radius: 10;" text="Submit" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Bright Demibold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets top="50.0" />
+   </padding>
+</VBox>

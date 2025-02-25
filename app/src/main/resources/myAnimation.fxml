@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane style="-fx-background-image: url('Welcome.jpg'); -fx-background-size: contain; -fx-background-repeat: no-repeat; -fx-background-position: center; -fx-background-size: 100% 100%;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.controllers.myAnimation">
+   <children>
+      <ImageView fx:id="mascot" fitHeight="450.0" fitWidth="400.0" layoutX="176.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="176.0" AnchorPane.rightAnchor="175.99473571777344" AnchorPane.topAnchor="61.0">
+         <image>
+            <Image url="@mascot.png" />
+         </image>
+         <rotationAxis>
+            <Point3D y="1.0" />
+         </rotationAxis>
+      </ImageView>
+   </children>
+</AnchorPane>

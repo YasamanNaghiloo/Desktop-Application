@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="199.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.controllers.MessageController">
+   <children>
+      <VBox prefHeight="220.0" prefWidth="370.0">
+         <children>
+            <HBox prefHeight="50.0" prefWidth="370.0" style="-fx-border-color: grey;">
+               <children>
+                  <Label alignment="CENTER" prefHeight="47.0" prefWidth="76.0" style="-fx-background-color: FA9D83;" text="From:" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Bright Demibold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sender" alignment="CENTER" prefHeight="47.0" prefWidth="293.0" style="-fx-background-color: FA9D83;" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Bright" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="sentRecipe" prefHeight="53.0" prefWidth="370.0" style="-fx-background-color: D3D3D3; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 5.0, 0.0, 0.0, 5.0);" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <TextArea fx:id="sentMessage" prefHeight="136.0" prefWidth="370.0">
+               <font>
+                  <Font name="Lucida Bright" size="14.0" />
+               </font>
+            </TextArea>
+         </children>
+      </VBox>
+   </children>
+</HBox>

@@ -1,0 +1,7 @@
+.transparent {
+  -fx-background-color: transparent;
+}
+
+.bg-primary {
+  -fx-background-color: #FA9D83;
+}

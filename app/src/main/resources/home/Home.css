@@ -1,0 +1,42 @@
+.tab-button {
+  -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 5.0, 0.0, 0.0, 5.0);
+  -fx-background-color:#FFFFFF;
+  -fx-background-radius: 0;
+}
+
+.search-box {
+  -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0, 0.0, 0.0, 10.0);
+  -fx-background-color:#FFFFFF;
+  -fx-background-radius: 69;
+}
+
+.filter-button {
+  -fx-background-color: #828282;
+  -fx-background-radius: 30;
+}
+
+.sidebar-button {
+  -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 5.0, 0.0, 0.0, 5.0);
+  -fx-background-color:#FFFFFF;
+  -fx-background-radius: 10;
+}
+
+.profile-button {
+  -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 5.0, 0.0, 0.0, 5.0);
+  -fx-background-color:#FFFFFF30;
+  -fx-background-radius: 10;
+}
+
+.save-button {
+  -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 5.0, 0.0, 0.0, 5.0);
+  -fx-background-color: #007095;
+  -fx-background-radius: 5;
+}
+
+.grid-item {
+  -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 5.0, 0.0, 0.0, 5.0);
+}
+
+.circular-image {
+  -fx-background-radius: 50%;  /* Ensures the container is also rounded */
+}
