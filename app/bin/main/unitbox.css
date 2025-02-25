@@ -1,0 +1,16 @@
+.combo-box, .combo-box-popup .list-cell {
+    -fx-background-color: #e2e2e2;
+    -fx-font-family: 'Lucida Bright';
+}
+
+.combo-box .arrow, .combo-box-base .arrow-button .arrow {
+    -fx-background-color: #000000;
+}
+
+.combo-box .list-cell:filled:selected, .combo-box .list-cell:filled:hover {
+    -fx-background-color: #F7B791;
+}
+
+#unit .prompt-text {
+    -fx-text-fill: white;
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.controllers.FavoriteController">
+   <children>
+      <Label alignment="CENTER" layoutX="240.0" layoutY="10.0" prefHeight="34.0" prefWidth="121.0" text="Favourites" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="239.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Lucida Bright Demibold" size="14.0" />
+         </font>
+      </Label>
+      <ListView fx:id="favoriteList" layoutX="45.0" layoutY="44.0" prefHeight="313.0" prefWidth="511.0" AnchorPane.bottomAnchor="43.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="44.0" />
+   </children>
+</AnchorPane>

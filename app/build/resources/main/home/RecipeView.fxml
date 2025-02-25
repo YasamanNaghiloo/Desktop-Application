@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToHeight="false" fitToWidth="true" focusTraversable="false" prefHeight="1103.0" prefWidth="1279.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.controllers.RecipeViewController">
+   <content>
+      <VBox alignment="TOP_CENTER" minHeight="-Infinity" minWidth="-Infinity" prefWidth="800.0" spacing="15.0" style="-fx-background-image: url('/back1.jpg');">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="667.0" prefWidth="1244.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <children>
+                  <AnchorPane fx:id="view">
+                     <children>
+                        <ImageView fx:id="recipeImage" fitHeight="706.0" fitWidth="1240.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="0.0" />
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1099.0" layoutY="544.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 5.0, 0.0, 0.0, 5.0);" AnchorPane.rightAnchor="0.0">
+                           <image>
+                              <Image url="@../Alfredo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="151.0" fitWidth="122.0" layoutY="544.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 5.0, 0.0, 0.0, 5.0);" AnchorPane.leftAnchor="0.0">
+                           <image>
+                              <Image url="@../Alfredo1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="42.0" prefWidth="943.0" spacing="40.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" prefHeight="62.0" prefWidth="206.0" text="Recipe Name" HBox.hgrow="NEVER">
+                     <font>
+                        <Font name="Lucida Bright Demibold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="showRecipeName" editable="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="648.0" style="-fx-background-radius: 10; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 5.0, 0.0, 0.0, 5.0);" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Lucida Bright" size="20.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" minWidth="-Infinity" prefHeight="76.0" prefWidth="68.0" text="Portion" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Lucida Bright Demibold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="showPortion" editable="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="43.0" style="-fx-background-radius: 10; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 5.0, 0.0, 0.0, 5.0);" HBox.hgrow="NEVER">
+                     <font>
+                        <Font name="Lucida Bright" size="14.0" />
+                     </font>
+                  </TextField>
+                  <AnchorPane prefHeight="27.0" prefWidth="13.0" HBox.hgrow="NEVER">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" top="1.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fx:id="starImage" fitHeight="35.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../star.png" />
+                           </image>
+                        </ImageView>
+                        <CheckBox fx:id="favourite" layoutX="1.0" layoutY="-3.0" mnemonicParsing="false" onAction="#btAddFavourite" opacity="0.0" prefHeight="35.0" prefWidth="35.0" style="-fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 5.0, 0.0, 0.0, 5.0);">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </CheckBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </AnchorPane>
+               </children>
+               <VBox.margin>
+                  <Insets right="30.0" />
+               </VBox.margin>
+            </HBox>
+            <TextField fx:id="showShortDescription" alignment="TOP_LEFT" editable="false" maxHeight="-Infinity" prefHeight="48.0" prefWidth="1244.0" style="-fx-background-radius: 10; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 5.0, 0.0, 0.0, 5.0);" VBox.vgrow="NEVER">
+               <font>
+                  <Font name="Lucida Bright" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="showTags" editable="false" maxHeight="-Infinity" style="-fx-background-radius: 10; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 5.0, 0.0, 0.0, 5.0);" VBox.vgrow="NEVER">
+               <font>
+                  <Font name="Lucida Bright" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Label alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="1246.0" text="Ingredients" VBox.vgrow="NEVER">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="showIngredients" editable="false" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="81.0" prefWidth="600.0" style="-fx-background-radius: 10; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 5.0, 0.0, 0.0, 5.0);" VBox.vgrow="NEVER">
+               <font>
+                  <Font name="Lucida Bright" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </TextArea>
+            <Label alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="1247.0" text="Start to cook!" VBox.vgrow="NEVER">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="showFullDescription" editable="false" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="232.0" prefWidth="600.0" style="-fx-background-radius: 10; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 5.0, 0.0, 0.0, 5.0);" VBox.vgrow="NEVER">
+               <font>
+                  <Font name="Lucida Bright" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </TextArea>
+            <TextField fx:id="commentBox" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#postComment" prefHeight="39.0" prefWidth="943.0" promptText="What's on your mind?" style="-fx-background-radius: 10; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 5.0, 0.0, 0.0, 5.0);" VBox.vgrow="NEVER">
+               <font>
+                  <Font name="Lucida Bright Italic" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </TextField>
+            <VBox fx:id="showAllComments" minWidth="-Infinity" prefHeight="616.0" prefWidth="1277.0" spacing="12" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="50.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>
