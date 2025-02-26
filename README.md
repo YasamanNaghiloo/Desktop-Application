@@ -71,6 +71,11 @@ About the codes itself, We are using static methods in the Database Classes beca
 
 If there was any ambiguity, you may check the app tutorial, which is complete with slides, and you can search for specific portions of the slide if there is any ambiguity.
 
-## Acknowledgement
+## Authors and Acknowledgement
 
-This project was an assignemnt published by Linnaeus university.
+This project was a group project published by my university, Linnaeus, and is done by:
+- Yasaman Naghiloo
+- Wilma Nilsson
+- Gustav Karlsson
+- Danal Gholamian
+- Raime Sa'adaty Rad
